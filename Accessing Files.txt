@@ -1,0 +1,54 @@
+Accessing Files:
+Linux file access permissions are used to control who is able to read, write and execute
+a certain file.
+Basic permissions:
+Owner permissions: A user is the owner of the file. The owner's permissions determine
+what actions the owner of the file can perform on the file. The Owner permissions apply
+only the owner of the file or directory, they will not impact the actions of other users.
+Group permissions: The group's permissions determine what actions a user, who is a member
+of the group that a file belongs to, can perform on the file.
+Other permissions: The permissions for others indicate what action all other users can perform on the file.
+
+Linux permissions dictate 3 things that an user can do with a file: read, write and execute.
+They are referred to in Linux by a single letter each.
+
+r read: you may view the contents of the file.
+w write: you may change the contents of the file.
+x execute: you may execute the contents of the file.
+
+Chmod: The command called chmod is used to change permissions on a file or directory. It stands for
+change file mode bits which is a bit of a mouthfull but think of the mode bits as the permission
+to execute or run the file if it is a program or script.
+
+The following 3 permissions are defined for every file and directory in Linux system for all 3 owners:
+
+Read: The Read permission gives you the authority to open and read a file. It gives you the ability to
+list its content.
+Write: The write permission gives you the authority to add, remove and rename files stored in the directory.
+Consider a scenario where you have to write permission on file but do not have write permission on the directory
+where the file is stored. You will be able to modify the file contents but you will not be able to rename, move
+or remove the file from the directory.
+Execute: In Unix/Linux, you cannot run a program unless the execute permission is set. If the execute permission
+is not set, you might still be able to see/modify the program code, but not run it.
+
+Read, write and execute permissions are the basic building blocks of Unix permissions, which can be briefly described
+as:
+Read: Grants the capability to read, i.e., view the contents of the file.
+Write: Grants the capability to modify, or remove the content of the file.
+Execute: User with execute permissions can run a file as a program.
+
+Directory Access Modes:
+Directory access modes are listed and organized in the same manner as any other file.
+r = read permission
+w = write permission
+x = execute permission
+- = no permission
+
+Changing Ownership:
+The chown command changes the ownership of a file. The basic syntax is as follows -
+$ chown user filelist
+The value of the user can be either the name of a user on the system or the user id (uid) of a user on the system.
+
+The chgrp command changes the group ownership of a file. The basic syntax is as follows -
+$ chgrp group filelist
+The value of group can be the name of a group on the system or the group ID(GID) of a group on the system.
