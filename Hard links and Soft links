@@ -1,0 +1,20 @@
+Links and types:
+There are two types of links:
+1. Hard links
+2. Soft links (Symbolic links)
+
+Hard link:
+Hard links acts like a mirror copy of the original file. These links share the same incode. It accesses the data available in the original file.
+If the earlier selected file is deleted, the hard link to the file will still contain the data of that file. Changes made to the original or
+hard-linked file will reflect in the other. The size of the hard link file is same as the original file. It has the actual content of the
+original file, so that you can view the content, even if the original file moved or removed. Hard links are comparitively faster than soft link.
+Command for hard link is-
+$ ln [original file name] [Link name]
+
+Soft link:
+Soft link (also known as Symbolic link) is an actual link to the original file also know as symbolic link or symlinks. It does not access the data
+available in the original file. Soft links are comparatively slower. The soft links points to the original file so if the original file is deleted
+then the soft link fails. Soft link contains the path for original file and not the content. The size of the soft link is equal to the name of the
+file for which the soft link is created. If you delete soft link nothing will happen to the original file. The reason for this is, the actual file
+or directory’s incode is different from the soft link created file’s incode. 
+$ ln -s [Original file name] [Link name]
