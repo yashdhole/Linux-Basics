@@ -1,0 +1,37 @@
+Package Management in linux:
+
+Package management is a method of installing and maintaining (which includes updating and probably removing as well) software on the system in Linux.
+It includes updating and probably removing as well. Programs were only distributed as source code, along with the required man pages, the necessary
+configuration files, and more. Nowadays, most Linux distributors use by default pre-built programs or sets of programs called packages, which are
+presented to users ready for installation on that distribution. However, one of the wonders of Linux is the possibility to obtain source code of
+a program to be studied, improved, and compiled. There are many package manager studio for Linux/Unix based system.
+
+Yum:
+yum is the primary tool for getting, installing, deleting, querying, and managing Red Hat Enterprise Linux,
+RPM software packages from official Red Hat software repositories, as well as other third-party repositories.
+yum is used in Red Hat Enterprise Linux versions 5 and later.
+
+Commands in YUM:
+yum install--Installs the specified packages
+remove--Removes the specified packages
+search--Searches package metadata for keywords
+info--Lists description
+update--Updates each package to the latest version
+repolist--Lists repositories
+history--Displays what has happened in past transactions
+YUM provides many options for package management.
+
+Yam Package Manager:
+1.It is Yellowdog Updater Modified.
+2.It is command line package manager for RPM based Linux distribution such as CentOS,Fedora and RedHat.
+3.It enables us to install a package and all its dependencies, delete package, upgrade existing packages, search for packages etc.
+4.Syntax of Yam Command : yam[OPTIONS][COMMAND][PACKAGE]
+
+Yam Repository:
+1.It is warehouse of linux software.
+2.It holds a number of RPM package file and enable download and installation of new software on our VPS.
+
+Yum Repository:
+1.File must exist in the /etc/yum.repos.d/ directory
+2.File must have an extension .repo
+3.If GPG check is enabled then GPG key must be mentioned.
