@@ -1,0 +1,25 @@
+Linux partition:
+Partitioning is a method which allow us to divide a hard drive into isolated sections where each section behaves as its own hard drive.
+Partitioning is particularly useful if we run multiple operating systems.
+There are lots of powerful tools for creating, removing, and otherwise manipulating disk partitions in Linux.
+
+Steps to create a partition:
+1.List partitions.
+2.Label a partition.
+3.Use mkpart to make a partition.
+4.Let the partition be created/settle.
+5.Attach the file system to the partition.
+6.Create a Mount point directory.
+7.Add entry in fstab.
+8.Systemctl daemon-reload.
+9.Mount the partition on the directory.
+10.Reboot.
+
+Commands:
+1.List block with UUID Lsblk: fs /dev/vdb
+2.List partitions: parted -l
+3.Make label to a partition: parted /dev/vdb mklabel msdos
+4.Create a partition: mkpart
+5.Wait till partition is registered successfully: udevadm settle
+6.Format file system with XFS file system: mkfs.xfs /dev/vdb1
+7.Restart daemon service: systemctl daemon-reload
